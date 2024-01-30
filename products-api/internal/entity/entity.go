@@ -23,12 +23,13 @@ type Product struct {
 	ImageURL    string
 }
 
-func newProduct(name, description string, price float64, categoryID string) *Product {
+func NewProduct(name, description string, price float64, categoryID string, imageUrl string) *Product {
 	return &Product{
 		ID:          uuid.New().String(),
 		Name:        name,
 		Description: description,
 		Price:       price,
 		CategoryID:  categoryID,
+		ImageURL:    imageUrl,
 	}
 }
