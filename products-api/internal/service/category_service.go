@@ -34,3 +34,12 @@ func (cs *CategoryService) CreateCategory(name string) (*entity.Category, error)
 
 	return category, nil
 }
+
+func (cs *CategoryService) GetCategory(id string) (*entity.Category, error) {
+	category, err := cs.CategoryDB.GetCategory(id)
+	if err != nil {
+		return nil, err
+	}
+
+	return category, nil
+}
