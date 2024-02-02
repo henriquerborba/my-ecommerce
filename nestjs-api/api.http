@@ -1,0 +1,12 @@
+GET http://localhost:3000/products
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Product 2",
+  "description": "Product 2 description",
+	"image_url": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png",
+  "price": 100
+}
