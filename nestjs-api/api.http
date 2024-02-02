@@ -10,3 +10,16 @@ Content-Type: application/json
 	"image_url": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png",
   "price": 100
 }
+
+###
+PATCH http://localhost:3000/products/fa085356-7e60-4fed-9e00-aa5aff920921
+Content-Type: application/json
+
+{
+  "name": "Product 1"
+}
+
+
+###
+DELETE http://localhost:3000/products/fa085356-7e60-4fed-9e00-aa5aff920921
+
