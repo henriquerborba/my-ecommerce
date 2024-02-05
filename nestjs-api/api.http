@@ -19,7 +19,26 @@ Content-Type: application/json
   "name": "Product 1"
 }
 
-
 ###
 DELETE http://localhost:3000/products/fa085356-7e60-4fed-9e00-aa5aff920921
 
+###
+GET http://localhost:3000/orders
+
+###
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+  "cad_hash": "cad_hash",
+  "items": [
+    {
+      "product_id": "04c4353a-3f6d-4272-a8f2-44b82c05ecc0",
+      "quantity": 10
+    },
+    {
+      "product_id": "0afa7630-4fc1-4d69-beed-4f8f15becadc",
+      "quantity": 1
+    }
+  ]
+}
