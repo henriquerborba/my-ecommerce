@@ -22,12 +22,24 @@ Content-Type: application/json
 ###
 DELETE http://localhost:3000/products/fa085356-7e60-4fed-9e00-aa5aff920921
 
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "chris",
+  "password": "chris"
+}
+
 ###
 GET http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsInVzZXJuYW1lIjoiY2hyaXMiLCJpYXQiOjE3MDcwOTQ0MTgsImV4cCI6MTcwNzA5NDQ3OH0.CaZpPymBckSstgj-g0cAEZ1UFLbbqdHl_gzyKEszCU0
 
 ###
 POST http://localhost:3000/orders
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcwNzA5MzY5OCwiZXhwIjoxNzA3MDkzNzU4fQ.KEdIBHFFs6KbWBgh3sHT08Dk9VOM1e67Df0jws9c0yE
 
 {
   "cad_hash": "cad_hash",
@@ -42,3 +54,4 @@ Content-Type: application/json
     }
   ]
 }
+
