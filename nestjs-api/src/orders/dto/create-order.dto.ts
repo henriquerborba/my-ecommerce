@@ -18,7 +18,7 @@ export class CreateOrderDto {
   @MaxLength(255)
   @IsString()
   @IsNotEmpty()
-  cad_hash: string;
+  card_hash: string;
 }
 
 export class OrderItemDto {
